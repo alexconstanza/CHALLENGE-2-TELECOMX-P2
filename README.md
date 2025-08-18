@@ -19,13 +19,13 @@ El presente proyecto tiene como propósito **identificar los factores determinan
 
 ##  Comparación de Resultados  
 
-| Modelo              | Accuracy | Precision | Recall | F1-score |
-|---------------------|----------|-----------|--------|----------|
-| **Random Forest**   | 0.751    | 0.544     | 0.662  | 0.597    |
-| KNN (normalizado)   | 0.732    | 0.516     | 0.645  | 0.573    |
-| Árbol de Decisión   | 0.656    | 0.424     | 0.642  | 0.510    |
+| Modelo              | Accuracy    | Precision    | Recall    | F1-score    |
+|---------------------|-------------|--------------|-----------|-------------|
+| **Random Forest**   | 0.745972    | 0.516915     | 0.680927  | 0.587692    |
+| KNN (normalizado)   | 0.688152    | 0.442604     | 0.666667  | 0.532006    |
+| Árbol de Decisión   | 0.725592    | 0.488158     | 0.661319  | 0.561696    |
 
- **Conclusión parcial:** El modelo **Random Forest** obtuvo el mejor equilibrio entre métricas, destacando en *Recall*, lo que lo convierte en la alternativa más confiable para **detectar posibles cancelaciones**.  
+ **Conclusión:** Se encontro que el mejor modelo para detectar posibles cancelaciones es el Random Forest ya que fue el mas equilibrado en todas sus metricas.  
 
 ---
 
@@ -36,26 +36,38 @@ El presente proyecto tiene como propósito **identificar los factores determinan
 
 ##  Interpretación de Resultados  
 
-- **Antigüedad baja:** mayor probabilidad de cancelación.  
-- **Menor uso o facturación:** refleja una menor percepción de valor.  
-- **Alta frecuencia de reclamos:** indicador robusto de insatisfacción.  
-- **Edad del cliente:** asociada con el tipo de servicio o nivel de tolerancia.  
-- **Tiempo desde último contacto:** la desconexión anticipa posibles cancelaciones.  
+1. **Antigüedad del cliente**  
+   Los resultados evidencian que los clientes con menor tiempo de permanencia presentan una **mayor probabilidad de cancelación**. Esto sugiere que las fases iniciales del ciclo de vida del cliente constituyen un periodo crítico, en el cual la consolidación de la relación comercial y la generación de confianza resultan determinantes para la retención.  
+
+2. **Nivel de uso y facturación**  
+   Se observa que los clientes con **bajos niveles de uso o facturación** tienden a presentar una **percepción reducida del valor del servicio**. Esta situación puede derivar en una menor motivación para mantener la suscripción, lo que incrementa la probabilidad de abandono.  
+
+3. **Reclamos y quejas**  
+   Una **alta frecuencia de reclamos** se erige como un **indicador sólido de insatisfacción**. Este hallazgo coincide con la literatura sobre gestión de clientes, que señala la relación directa entre experiencias negativas recurrentes y la decisión de cancelación.  
+
+4. **Edad del cliente**  
+   La **edad se asocia de manera diferenciada con la propensión a cancelar**. Este comportamiento podría estar vinculado tanto al **tipo de servicio contratado** como al **nivel de tolerancia frente a problemas operativos o de atención al cliente**.  
+
+5. **Tiempo desde el último contacto**  
+   Finalmente, se detecta que una **mayor distancia temporal desde la última interacción con la empresa** constituye un **predictor significativo de cancelación**. Este hallazgo sugiere que la desconexión progresiva entre el cliente y la organización puede anticipar la decisión de abandono.  
 
 ---
 
 ##  Estrategias de Retención Propuestas  
 
-- **Fidelización temprana:** incentivos para nuevos clientes en los primeros meses.  
-- **Segmentación por uso:** identificar clientes de bajo consumo para ofrecer servicios personalizados.  
-- **Seguimiento post-reclamo:** activar alertas automáticas y contacto humano tras incidencias.  
-- **Campañas proactivas de contacto:** reenganchar a clientes con largos periodos sin interacción.  
-- **Optimización de promociones:** ajustar descuentos de acuerdo con el perfil y comportamiento del cliente.  
+El análisis de las variables asociadas al abandono de clientes permite identificar patrones relevantes para la comprensión del fenómeno de cancelación:  
+En conjunto, estos resultados subrayan la importancia de diseñar **estrategias de retención** orientadas a:  
+- Fortalecer la relación durante los primeros meses del ciclo de vida del cliente.  
+- Incrementar la percepción de valor mediante un uso activo del servicio.  
+- Gestionar de manera eficiente los reclamos para reducir la insatisfacción.  
+- Mantener interacciones frecuentes que prevengan la desconexión progresiva.
+
+   
 
 ---
 
 ##  Conclusión General  
 
-El análisis demuestra que la cancelación de clientes puede **predecirse con alto nivel de confiabilidad** mediante modelos de *machine learning*, siendo **Random Forest** el de mejor desempeño.  
+El análisis evidencia que la **cancelación de clientes puede predecirse con un alto grado de confiabilidad** mediante el uso de modelos de *machine learning*, destacando **Random Forest** como el modelo de mejor desempeño.  
 
-Este enfoque analítico permite a la empresa **anticiparse a la evasión, aplicar estrategias preventivas y fortalecer la experiencia del cliente**, reduciendo significativamente las pérdidas asociadas al churn.  
+Este enfoque analítico permite a la empresa **anticiparse a la evasión**, implementar **estrategias preventivas efectivas** y **fortalecer la experiencia del cliente**, contribuyendo así a una **reducción significativa de las pérdidas asociadas al churn**.  
