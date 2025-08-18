@@ -71,3 +71,9 @@ En conjunto, estos resultados subrayan la importancia de diseñar **estrategias 
 El análisis evidencia que la **cancelación de clientes puede predecirse con un alto grado de confiabilidad** mediante el uso de modelos de *machine learning*, destacando **Random Forest** como el modelo de mejor desempeño.  
 
 Este enfoque analítico permite a la empresa **anticiparse a la evasión**, implementar **estrategias preventivas efectivas** y **fortalecer la experiencia del cliente**, contribuyendo así a una **reducción significativa de las pérdidas asociadas al churn**.  
+
+## Autor del Proyecto  
+-**Creado por:** *Edgar Alexander Constanza Jovel*   
+-**Rol:** Científico de Datos / Data Scientist  
+-**Fecha:** Agosto 2025  
+-**Email:** alexconstanza@gmail.com
